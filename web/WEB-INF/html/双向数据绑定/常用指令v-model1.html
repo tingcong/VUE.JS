@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>双向数据绑定</title>
+    <script src="../../js/vue.js"></script>
+    <script>
+        window.onload=function () {
+            new Vue({
+                el: '#box', /*选择器*/
+                data: {     /*数据*/
+                    msg: 'welcome to VUE.JS'
+                }
+            });
+        };
+
+    </script>
+</head>
+<body>
+    <div id="box">
+        <input type="text" v-model="msg">
+        <input type="text" v-model="msg">
+        <br>
+        {{msg}}
+    </div>
+</body>
+</html>
